@@ -27,8 +27,8 @@ body {
   margin-top: -10px;
 }
 
-.smallBottonm {
-  margin-bottom: 0px;
+.smallBottom {
+  margin-bottom: -15px;
 }
 
 /* 헤더 */
@@ -109,12 +109,17 @@ hr.hr-3 {
 
 
 
-/* 링크 밑줄 없애기 */
+/* 링크 */
 
 .noUnderline {
   text-decoration: none; /* Removes underline */
   color: inherit; /* Keeps the original text color */
 }
+
+a:hover {
+  color: lightgray;
+}
+
 
 
 
@@ -155,3 +160,4 @@ ul {
   padding-left: 10px;
   margin-left: 20px;
 }
+
