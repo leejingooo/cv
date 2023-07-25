@@ -3,19 +3,78 @@ body {
     font-family: 'Noto Serif', serif;
     font-family: 'Noto Serif KR', serif;
     padding-left: 40px;
+    padding-right: 40px;
 }
+
+/* 폰트 */
+
+.font1 {
+  font-family: 'Cinzel', serif;
+}
+
+
+.font2 {
+  font-family: 'Noto Serif', 'Noto Serif KR', serif;
+}
+
+/* 크기조정 */
+
+.smallSize {
+  font-size: 12px; 
+}
+
+.smallTop {
+  margin-top: -10px;
+}
+
+.smallBottonm {
+  margin-bottom: 0px;
+}
+
+/* 헤더 */
 
 header {
     text-align: center;
     padding: 20px;
     background-color: #FFFFFF;
+    
 }
 
+
+/* 푸터 */
+
+footer {
+  font-size: 12px;
+  text-align: right;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+
+/* 헤더 */
 
 h1 {
       margin: 0;
-      font-size: 24px;
+      font-size: 36px;
+      font-family: 'Cinzel', serif;
 }
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Cinzel', serif;
+}
+
+h3 {
+  margin: 0;
+  font-size: 12px;
+  font-family: 'Noto Serif', serif;
+  font-family: 'Noto Serif KR', serif;
+}
+
+
+
+/* 구분선 */
 
 hr {
   background-color: #fff;
@@ -27,4 +86,72 @@ hr.hr-3 {
   border: 0;
   height: 0;
   border-top: 1px solid #8c8c8c;
+}
+
+
+/* 컨테이너 */
+
+.container1 {
+  margin-left: 20px;
+}
+
+.container2 {
+  margin-left: 30px;
+}
+
+.container3 {
+  margin-left: 40px;
+}
+
+.containerA {
+  margin-left: 20px;
+}
+
+
+
+/* 링크 밑줄 없애기 */
+
+.noUnderline {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Keeps the original text color */
+}
+
+
+
+/* 좌우 나누기 */
+
+.flexContainer {
+  display: flex; /* Enables Flexbox layout */
+  justify-content: space-between; /* Spaces out the flex items */
+  align-items: center;
+}
+.flexItem {
+  flex-grow: 1; /* Allows the flex items to grow to fill the container */
+}
+.alignRight {
+  text-align: right; /* Aligns text to the right */
+}
+
+
+/* 목록 */
+.circleList {
+  list-style-type: none; /* Removes default bullets */
+}
+.circleList li {
+  display: flex; /* Enables Flexbox layout */
+  align-items: center; /* Centers items vertically */
+}
+.circleList li::before {
+  content: ""; /* Necessary for the pseudo-element to work */
+  display: inline-block;
+  width: 2px; /* Adjust these values to change the size of the circle */
+  height: 2px;
+  margin-right: 10px; /* Adds some space between the circle and the text */
+  border: 1px solid black; /* Makes the circle's border black */
+  border-radius: 50%; /* Makes the border a circle */
+}
+
+ul {
+  padding-left: 10px;
+  margin-left: 20px;
 }
