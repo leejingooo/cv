@@ -108,6 +108,33 @@ hr.hr-3 {
 }
 
 
+.containerColumn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  column-rule : 1px gray;
+}
+
+/* Column styles */
+.column {
+  flex-basis: 45%; /* Adjust this value for desired column width */
+
+}
+
+.containerColumn::before {
+  content: "";
+  flex-basis: 5px; /* Adjust this value for the width of the line */
+  background-color: #ccc;
+  margin: 10px; /* Adjust this value for the spacing between the line and columns */
+}
+
+.separator {
+  width: 0.5px; /* Adjust this value for the width of the line */
+  background-color: #ccc; /* Faint line color */
+  margin: 10px; /* Adjust this value for the spacing between the line and columns */
+}
+
+
 
 /* 링크 */
 
