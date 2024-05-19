@@ -88,6 +88,11 @@ hr.hr-3 {
   border-top: 1px solid #8c8c8c;
 }
 
+hr.vertical {
+  width: 0px;
+  height: 100%;
+  /* or height in PX */
+}
 
 /* 컨테이너 */
 
@@ -139,6 +144,7 @@ hr.hr-3 {
   margin: 10px;
   /* Adjust this value for the spacing between the line and columns */
 }
+
 
 
 
